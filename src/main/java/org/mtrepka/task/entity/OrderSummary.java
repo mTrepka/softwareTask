@@ -7,6 +7,7 @@ import java.util.List;
 
 @Data
 public class OrderSummary {
+    private long id;
     List<Fruit> fruitList = new LinkedList<>();
 
 
