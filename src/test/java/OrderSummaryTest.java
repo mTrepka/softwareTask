@@ -12,6 +12,10 @@ public class OrderSummaryTest {
         OrderSummary os = new OrderSummary();
         Apple apple = new Apple(10);
         Orange orange = new Orange(10);
+        double appleSummary = 5*apple.getPrice();
+        double orangeSummary = 7*orange.getPrice();// 9/3*2=6 + 1 w/o discount
+        Assertions.assertTrue(appleSummary==apple.getValue());
+        Assertions.assertTrue(orangeSummary==orange.getValue());
         double valSummary = apple.getValue()+orange.getValue();
         os.getFruitList().add(apple);
         os.getFruitList().add(orange);

@@ -9,4 +9,9 @@ public class Apple extends Fruit{
     public double getPrice() {
         return 0.6;
     }
+
+    @Override
+    public double getValue() {
+        return getPrice()*(amount/2+amount%2);
+    }
 }

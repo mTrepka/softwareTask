@@ -9,4 +9,9 @@ public class Orange extends Fruit{
     public double getPrice() {
         return 0.25;
     }
+
+    @Override
+    public double getValue() {
+        return getPrice()*((amount-amount%3)/3*2+amount%3);
+    }
 }
